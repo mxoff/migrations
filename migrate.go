@@ -10,6 +10,11 @@ import (
 	"github.com/golang-migrate/migrate/v4"
 )
 
+/* files name
+000001_init.up.sql
+000001_init.down.sql
+*/
+
 func New(dsn string, files string) *Migrate {
 	return &Migrate{
 		dsn:   dsn,
